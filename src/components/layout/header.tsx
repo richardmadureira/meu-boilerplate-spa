@@ -1,5 +1,6 @@
 import { ReactElement } from "react";
 import { FaAngleDown, FaArrowDown, FaEnvelope, FaRegEnvelope } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export const Header = (): ReactElement => {
   return (
@@ -9,7 +10,7 @@ export const Header = (): ReactElement => {
         </div>
         <div className="flex-none">
           <ul className="menu menu-horizontal hidden lg:flex">
-            <li><a>Navbar Item 1</a></li>
+            <li><Link to='/home'>Home Page</Link></li>
             <li><a>Navbar Item 2</a></li>
             <li tabIndex={0} className='bg-primary text-primary-content'>
               <a>Parent<FaAngleDown/></a>
